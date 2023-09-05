@@ -1,0 +1,1559 @@
+Started GET "/" for 127.0.0.1 at 2023-09-04 17:04:06 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 441)
+  Rendered layout layouts/application.html.erb (Duration: 464.1ms | Allocations: 90750)
+Completed 200 OK in 504ms (Views: 473.8ms | ActiveRecord: 0.0ms | Allocations: 97674)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 17:12:50 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 297)
+  Rendered layout layouts/application.html.erb (Duration: 6388.3ms | Allocations: 138316)
+Completed 200 OK in 6399ms (Views: 6391.4ms | ActiveRecord: 0.0ms | Allocations: 142236)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 17:18:46 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 16890)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 17788)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 17:19:41 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 297)
+  Rendered layout layouts/application.html.erb (Duration: 81.4ms | Allocations: 43683)
+Completed 200 OK in 91ms (Views: 84.0ms | ActiveRecord: 0.0ms | Allocations: 47602)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 17:24:30 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 5753)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 6014)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 17:24:34 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5733)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 5993)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 17:24:36 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5698)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 5959)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 19:01:02 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6049.4ms | Allocations: 66012)
+  Rendered layout layouts/application.html.erb (Duration: 6068.9ms | Allocations: 71966)
+Completed 200 OK in 6071ms (Views: 6070.2ms | ActiveRecord: 0.0ms | Allocations: 72777)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 19:11:32 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 971)
+  Rendered layout layouts/application.html.erb (Duration: 4582.7ms | Allocations: 42266)
+Completed 200 OK in 4584ms (Views: 4583.2ms | ActiveRecord: 0.0ms | Allocations: 42526)
+
+
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20230905005727)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "full_name" varchar, "username" varchar, "phone_number" varchar, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230905005727"]]
+  [1m[36mTRANSACTION (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-09-05 00:59:51.480188"], ["updated_at", "2023-09-05 00:59:51.480188"]]
+  [1m[36mTRANSACTION (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:15:21 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2561.4ms | Allocations: 40876)
+  Rendered layout layouts/application.html.erb (Duration: 2587.3ms | Allocations: 57713)
+Completed 200 OK in 2733ms (Views: 2612.8ms | ActiveRecord: 0.0ms | Allocations: 64156)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:15:26 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1142)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 6830)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 7094)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:15:31 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1138)
+  Rendered layout layouts/application.html.erb (Duration: 39.7ms | Allocations: 6847)
+Completed 200 OK in 40ms (Views: 40.2ms | ActiveRecord: 0.0ms | Allocations: 7111)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:15:47 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 725)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 58.7ms | Allocations: 4767)
+  Rendered layout layouts/application.html.erb (Duration: 64.8ms | Allocations: 10651)
+Completed 200 OK in 77ms (Views: 66.4ms | ActiveRecord: 0.4ms | Allocations: 19824)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-09-04 20:16:03 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 234)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 156)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2088)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 7956)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 9067)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:16:18 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "full_name", "username", "phone_number", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "test@gmail.com"], ["encrypted_password", "[FILTERED]"], ["full_name", nil], ["username", nil], ["phone_number", nil], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2023-09-05 01:16:18.831155"], ["updated_at", "2023-09-05 01:16:18.831155"]]
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 222ms (ActiveRecord: 10.4ms | Allocations: 11869)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:16:18 -0500
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1172)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6859)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 7170)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:19:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 70.9ms | Allocations: 29628)
+  Rendered layout layouts/application.html.erb (Duration: 85.7ms | Allocations: 46552)
+Completed 200 OK in 102ms (Views: 88.7ms | ActiveRecord: 0.0ms | Allocations: 52414)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:20:29 -0500
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 12ms (ActiveRecord: 0.5ms | Allocations: 10829)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:20:29 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1221)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 7036)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 7299)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-09-04 20:20:41 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1691)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:20:41 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1167)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6855)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 7116)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:20:44 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1171)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 6858)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 7118)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:21:22 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1045)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6756)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 7018)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:21:30 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 725)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 3615)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 9612)
+Completed 200 OK in 34ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 17966)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:21:37 -0500
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+Completed 201 Created in 202ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4156)
+
+
+  
+NoMethodError (undefined method `empty?' for #<User id: 1, email: "test@gmail.com", full_name: nil, username: nil, phone_number: nil, created_at: "2023-09-05 01:16:18.831155000 +0000", updated_at: "2023-09-05 01:16:18.831155000 +0000">):
+  
+activemodel (7.0.7.2) lib/active_model/attribute_methods.rb:450:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:71:in `block in digest_body'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each_chunk'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:127:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:75:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:480:in `each'
+rack (2.2.8) lib/rack/body_proxy.rb:41:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:69:in `digest_body'
+rack (2.2.8) lib/rack/etag.rb:33:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:21:53 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 132)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1205)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 7128)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 7761)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-09-04 20:21:55 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 233)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 156)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2082)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 7949)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 8966)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:22:04 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 180ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4959)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:22:05 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 179ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4415)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:22:11 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 183ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4407)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:22:11 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 181ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4406)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:22:12 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 132)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1204)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 6997)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 7629)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:22:17 -0500
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+Completed 201 Created in 177ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 2362)
+
+
+  
+NoMethodError (undefined method `empty?' for #<User id: 1, email: "test@gmail.com", full_name: nil, username: nil, phone_number: nil, created_at: "2023-09-05 01:16:18.831155000 +0000", updated_at: "2023-09-05 01:16:18.831155000 +0000">):
+  
+activemodel (7.0.7.2) lib/active_model/attribute_methods.rb:450:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:71:in `block in digest_body'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each_chunk'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:127:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:75:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:480:in `each'
+rack (2.2.8) lib/rack/body_proxy.rb:41:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:69:in `digest_body'
+rack (2.2.8) lib/rack/etag.rb:33:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:24:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 725)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 4083)
+  Rendered layout layouts/application.html.erb (Duration: 97.2ms | Allocations: 48622)
+Completed 200 OK in 120ms (Views: 106.2ms | ActiveRecord: 0.4ms | Allocations: 61299)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:24:56 -0500
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+Completed 201 Created in 187ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 5728)
+
+
+  
+NoMethodError (undefined method `empty?' for #<User id: 1, email: "test@gmail.com", full_name: nil, username: nil, phone_number: nil, created_at: "2023-09-05 01:16:18.831155000 +0000", updated_at: "2023-09-05 01:16:18.831155000 +0000">):
+  
+activemodel (7.0.7.2) lib/active_model/attribute_methods.rb:450:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:71:in `block in digest_body'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each_chunk'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:127:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:75:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:480:in `each'
+rack (2.2.8) lib/rack/body_proxy.rb:41:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:69:in `digest_body'
+rack (2.2.8) lib/rack/etag.rb:33:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-09-04 20:25:06 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 233)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 156)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2087)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 8085)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 9232)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-09-04 20:25:06 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1177)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 7100)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 7691)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:25:07 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Completed 422 Unprocessable Entity in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1436)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:25:16 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 181ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4600)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:25:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 199ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 16096)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:25:44 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test2@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test2@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "full_name", "username", "phone_number", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "test2@gmail.com"], ["encrypted_password", "[FILTERED]"], ["full_name", nil], ["username", nil], ["phone_number", nil], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2023-09-05 01:25:44.811892"], ["updated_at", "2023-09-05 01:25:44.811892"]]
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 201ms (Views: 0.1ms | ActiveRecord: 9.9ms | Allocations: 9896)
+
+
+  
+NoMethodError (undefined method `empty?' for #<User id: 2, email: "test2@gmail.com", full_name: nil, username: nil, phone_number: nil, created_at: "2023-09-05 01:25:44.811892000 +0000", updated_at: "2023-09-05 01:25:44.811892000 +0000">):
+  
+activemodel (7.0.7.2) lib/active_model/attribute_methods.rb:450:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:71:in `block in digest_body'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each_chunk'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:127:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:75:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:480:in `each'
+rack (2.2.8) lib/rack/body_proxy.rb:41:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:69:in `digest_body'
+rack (2.2.8) lib/rack/etag.rb:33:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:28:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 67.3ms | Allocations: 29433)
+  Rendered layout layouts/application.html.erb (Duration: 81.4ms | Allocations: 46357)
+Completed 200 OK in 94ms (Views: 83.9ms | ActiveRecord: 0.0ms | Allocations: 52149)
+
+
+Started GET "/users/sign-up" for 127.0.0.1 at 2023-09-04 20:28:32 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign-up"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-09-04 20:28:45 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 238)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 602)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3711)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 9709)
+Completed 200 OK in 23ms (Views: 13.9ms | ActiveRecord: 0.4ms | Allocations: 18580)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:28:56 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test2@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test2@a.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "full_name", "username", "phone_number", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "test2@a.com"], ["encrypted_password", "[FILTERED]"], ["full_name", nil], ["username", nil], ["phone_number", nil], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2023-09-05 01:28:56.240404"], ["updated_at", "2023-09-05 01:28:56.240404"]]
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 198ms (Views: 0.1ms | ActiveRecord: 9.7ms | Allocations: 10211)
+
+
+  
+NoMethodError (undefined method `empty?' for #<User id: 3, email: "test2@a.com", full_name: nil, username: nil, phone_number: nil, created_at: "2023-09-05 01:28:56.240404000 +0000", updated_at: "2023-09-05 01:28:56.240404000 +0000">):
+  
+activemodel (7.0.7.2) lib/active_model/attribute_methods.rb:450:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:71:in `block in digest_body'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each_chunk'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:127:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:75:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:480:in `each'
+rack (2.2.8) lib/rack/body_proxy.rb:41:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:69:in `digest_body'
+rack (2.2.8) lib/rack/etag.rb:33:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:29:08 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 270)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2013)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 8011)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 9215)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:29:17 -0500
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 196ms (ActiveRecord: 0.1ms | Allocations: 9022)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:29:17 -0500
+Processing by Devise::SessionsController#new as TURBO_STREAM
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1371)
+
+
+  
+NoMethodError (undefined method `empty?' for #<User id: nil, email: "", full_name: nil, username: nil, phone_number: nil, created_at: nil, updated_at: nil>):
+  
+activemodel (7.0.7.2) lib/active_model/attribute_methods.rb:450:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:71:in `block in digest_body'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each_chunk'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:127:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:75:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:480:in `each'
+rack (2.2.8) lib/rack/body_proxy.rb:41:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:69:in `digest_body'
+rack (2.2.8) lib/rack/etag.rb:33:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:29:41 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 132)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1204)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 7127)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 7782)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:29:46 -0500
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+Completed 201 Created in 181ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 2557)
+
+
+  
+NoMethodError (undefined method `empty?' for #<User id: 1, email: "test@gmail.com", full_name: nil, username: nil, phone_number: nil, created_at: "2023-09-05 01:16:18.831155000 +0000", updated_at: "2023-09-05 01:16:18.831155000 +0000">):
+  
+activemodel (7.0.7.2) lib/active_model/attribute_methods.rb:450:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:71:in `block in digest_body'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each_chunk'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:127:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:75:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:480:in `each'
+rack (2.2.8) lib/rack/body_proxy.rb:41:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:69:in `digest_body'
+rack (2.2.8) lib/rack/etag.rb:33:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:31:38 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NameError (uninitialized constant TurboDeviseController):
+  
+activesupport (7.0.7.2) lib/active_support/inflector/methods.rb:278:in `constantize'
+activesupport (7.0.7.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+devise (4.9.2) app/controllers/devise_controller.rb:4:in `<main>'
+<internal:/home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+<internal:/home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+bootsnap (1.16.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+zeitwerk (2.6.11) lib/zeitwerk/kernel.rb:30:in `require'
+devise (4.9.2) app/controllers/devise/sessions_controller.rb:3:in `<main>'
+<internal:/home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+<internal:/home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+bootsnap (1.16.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+zeitwerk (2.6.11) lib/zeitwerk/kernel.rb:30:in `require'
+activesupport (7.0.7.2) lib/active_support/inflector/methods.rb:278:in `const_get'
+activesupport (7.0.7.2) lib/active_support/inflector/methods.rb:278:in `constantize'
+activesupport (7.0.7.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.7.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.7.2) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.7.2) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.7.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.7.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:31:43 -0500
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1783)
+
+
+  
+NameError (uninitialized constant TurboDeviseController):
+  
+activesupport (7.0.7.2) lib/active_support/inflector/methods.rb:278:in `constantize'
+activesupport (7.0.7.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+devise (4.9.2) app/controllers/devise_controller.rb:4:in `<main>'
+<internal:/home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+<internal:/home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/site_ruby/3.2.0/rubygems/core_ext/kernel_require.rb>:38:in `require'
+bootsnap (1.16.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require'
+zeitwerk (2.6.11) lib/zeitwerk/kernel.rb:30:in `require'
+devise (4.9.2) lib/devise/controllers/helpers.rb:152:in `devise_controller?'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:179:in `block (2 levels) in halting_and_conditional'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:179:in `all?'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:179:in `block in halting_and_conditional'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+actiontext (7.0.7.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.7.2) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:32:16 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 64.6ms | Allocations: 29718)
+  Rendered layout layouts/application.html.erb (Duration: 78.5ms | Allocations: 46642)
+Completed 200 OK in 94ms (Views: 81.2ms | ActiveRecord: 0.0ms | Allocations: 52510)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-09-04 20:32:53 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 242)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 607)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 3864)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 9862)
+Completed 200 OK in 26ms (Views: 15.3ms | ActiveRecord: 0.5ms | Allocations: 18743)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:33:04 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@a.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "full_name", "username", "phone_number", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "test@a.com"], ["encrypted_password", "[FILTERED]"], ["full_name", nil], ["username", nil], ["phone_number", nil], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2023-09-05 01:33:05.037677"], ["updated_at", "2023-09-05 01:33:05.037677"]]
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 201 Created in 201ms (Views: 0.1ms | ActiveRecord: 10.9ms | Allocations: 10621)
+
+
+  
+NoMethodError (undefined method `empty?' for #<User id: 4, email: "test@a.com", full_name: nil, username: nil, phone_number: nil, created_at: "2023-09-05 01:33:05.037677000 +0000", updated_at: "2023-09-05 01:33:05.037677000 +0000">):
+  
+activemodel (7.0.7.2) lib/active_model/attribute_methods.rb:450:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:71:in `block in digest_body'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each_chunk'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:127:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:75:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:480:in `each'
+rack (2.2.8) lib/rack/body_proxy.rb:41:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:69:in `digest_body'
+rack (2.2.8) lib/rack/etag.rb:33:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-09-04 20:34:20 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 247)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 603)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 4169)
+  Rendered layout layouts/application.html.erb (Duration: 90.4ms | Allocations: 48759)
+Completed 200 OK in 112ms (Views: 98.4ms | ActiveRecord: 0.4ms | Allocations: 61297)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:34:29 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@a.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 185ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 7047)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:34:36 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@a.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 179ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4421)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:35:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@a.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 199ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 16096)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:35:49 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@a.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 182ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4427)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:35:50 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@a.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 180ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4418)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:35:50 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@a.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 181ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4418)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-09-04 20:35:50 -0500
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@a.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@a.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 188ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 4421)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:36:07 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 725)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 4010)
+  Rendered layout layouts/application.html.erb (Duration: 81.9ms | Allocations: 48660)
+Completed 200 OK in 91ms (Views: 89.9ms | ActiveRecord: 0.0ms | Allocations: 52426)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:36:13 -0500
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@a.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@a.com"], ["LIMIT", 1]]
+Completed 201 Created in 180ms (Views: 0.1ms | ActiveRecord: 0.1ms | Allocations: 3785)
+
+
+  
+NoMethodError (undefined method `empty?' for #<User id: 4, email: "test@a.com", full_name: nil, username: nil, phone_number: nil, created_at: "2023-09-05 01:33:05.037677000 +0000", updated_at: "2023-09-05 01:33:05.037677000 +0000">):
+  
+activemodel (7.0.7.2) lib/active_model/attribute_methods.rb:450:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:71:in `block in digest_body'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each_chunk'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:127:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:75:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:480:in `each'
+rack (2.2.8) lib/rack/body_proxy.rb:41:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:69:in `digest_body'
+rack (2.2.8) lib/rack/etag.rb:33:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:36:22 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 132)
+  Rendered /home/kdong2/.asdf/installs/ruby/3.2.2/lib/ruby/gems/3.2.0/gems/devise-4.9.2/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1204)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 7128)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 7769)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:36:27 -0500
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 177ms (ActiveRecord: 0.1ms | Allocations: 1586)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:36:27 -0500
+Processing by Devise::SessionsController#new as TURBO_STREAM
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1351)
+
+
+  
+NoMethodError (undefined method `empty?' for #<User id: nil, email: "", full_name: nil, username: nil, phone_number: nil, created_at: nil, updated_at: nil>):
+  
+activemodel (7.0.7.2) lib/active_model/attribute_methods.rb:450:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:71:in `block in digest_body'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each_chunk'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:127:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:75:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:480:in `each'
+rack (2.2.8) lib/rack/body_proxy.rb:41:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:69:in `digest_body'
+rack (2.2.8) lib/rack/etag.rb:33:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:39:39 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 68.6ms | Allocations: 30814)
+  Rendered layout layouts/application.html.erb (Duration: 91.9ms | Allocations: 47715)
+Completed 200 OK in 114ms (Views: 99.7ms | ActiveRecord: 0.4ms | Allocations: 60238)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:39:42 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1466)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 7157)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 7813)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:42:39 -0500
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"test@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 186ms (ActiveRecord: 0.2ms | Allocations: 3993)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:42:39 -0500
+Processing by Devise::SessionsController#new as TURBO_STREAM
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1987)
+
+
+  
+NoMethodError (undefined method `empty?' for #<User id: nil, email: "", full_name: nil, username: nil, phone_number: nil, created_at: nil, updated_at: nil>):
+  
+activemodel (7.0.7.2) lib/active_model/attribute_methods.rb:450:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:71:in `block in digest_body'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:145:in `each_chunk'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:127:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:75:in `each'
+actionpack (7.0.7.2) lib/action_dispatch/http/response.rb:480:in `each'
+rack (2.2.8) lib/rack/body_proxy.rb:41:in `method_missing'
+rack (2.2.8) lib/rack/etag.rb:69:in `digest_body'
+rack (2.2.8) lib/rack/etag.rb:33:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:42:44 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1503)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 7382)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 8104)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:43:57 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 391)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 6518)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 7350)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:43:59 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 226)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 6044)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 6304)
+
+
+Started GET "/" for 127.0.0.1 at 2023-09-04 20:57:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms | Allocations: 3423)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:57:44 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1127.9ms | Allocations: 48840)
+  Rendered layout layouts/application.html.erb (Duration: 1128.4ms | Allocations: 48941)
+Completed 500 Internal Server Error in 1144ms (ActiveRecord: 0.5ms | Allocations: 59042)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: font-awesome.
+        on line 3:1 of app/assets/stylesheets/application.scss
+>> @import "font-awesome";
+
+   ^
+):
+  
+app/assets/stylesheets/application.scss:3
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-09-04 20:57:49 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 341.7ms | Allocations: 36925)
+  Rendered layout layouts/application.html.erb (Duration: 342.1ms | Allocations: 37013)
+Completed 500 Internal Server Error in 343ms (ActiveRecord: 0.0ms | Allocations: 37662)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: font-awesome.
+        on line 3:1 of app/assets/stylesheets/application.scss
+>> @import "font-awesome";
+
+   ^
+):
+  
+app/assets/stylesheets/application.scss:3
+Started GET "/users/sign_up" for 127.0.0.1 at 2023-09-04 20:57:52 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 239)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 607)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3372)
+  Rendered layout layouts/application.html.erb (Duration: 355.2ms | Allocations: 20304)
+Completed 500 Internal Server Error in 357ms (ActiveRecord: 0.0ms | Allocations: 21441)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: font-awesome.
+        on line 3:1 of app/assets/stylesheets/application.scss
+>> @import "font-awesome";
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.scss:3
+app/views/layouts/application.html.erb:9
